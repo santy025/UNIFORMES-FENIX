@@ -78,6 +78,7 @@ label.f{display:block;background:var(--card);border:1px solid var(--line);border
 label.f:focus-within{border-color:var(--acc);box-shadow:0 0 0 4px rgba(255,45,149,.15)}
 label.f small{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
 label.f input{width:100%;background:none;border:0;outline:0;color:var(--txt);font:600 18px Inter}
+label.f input::placeholder{color:#6f6f84;opacity:1}
 label.f input.up{text-transform:uppercase;font-family:var(--disp);font-size:28px;letter-spacing:.06em}
 label.f .hint{font-size:11px;color:var(--mut);margin-top:4px}
 
@@ -229,8 +230,8 @@ label.f .hint{font-size:11px;color:var(--mut);margin-top:4px}
     <section class="step">
       <div class="sh"><div class="sn">1</div><div><div class="st">Tus datos</div><div class="ss">Así sabemos quién eligió qué</div></div></div>
       <div class="fields">
-        <label class="f"><small>Tu nombre completo</small><input id="jugador" autocomplete="name" placeholder="Ej: Santiago Acevedo" maxlength="40"></label>
-        <label class="f"><small>Nombre en la camiseta</small><input id="camiseta" class="up" placeholder="SANTY" maxlength="12"><div class="hint">Máx. 12 letras · así quedará estampado</div></label>
+        <label class="f"><small>Tu nombre completo ✍️</small><input id="jugador" autocomplete="name" placeholder="Escribe aquí tu nombre y apellido" maxlength="40"></label>
+        <label class="f"><small>Nombre en la camiseta 👕</small><input id="camiseta" class="up" placeholder="Escribe aquí tu apodo" maxlength="12"><div class="hint">Tu nombre o apodo tal como quieres que quede estampado · máx. 12 letras</div></label>
       </div>
     </section>
 
